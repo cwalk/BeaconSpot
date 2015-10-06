@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BeaconSpot" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="f42-ax-rtP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beacon Spot" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mRV-65-7Px">
+                                <rect key="frame" x="230" y="28" width="141" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="141" id="65m-gK-Ce4"/>
+                                    <constraint firstAttribute="height" constant="63" id="ykW-ue-COs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-CondensedMedium" family="Futura" pointSize="34"/>
+                                <color key="textColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iBeacon Locator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="igf-gB-a8Y">
+                                <rect key="frame" x="206" y="99" width="189" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="kbc-go-upi"/>
+                                    <constraint firstAttribute="width" constant="189" id="yB6-cq-b4J"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wVC-JS-2jz">
+                                <rect key="frame" x="220" y="481" width="160" height="60"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="hEb-UG-jbo"/>
+                                    <constraint firstAttribute="height" constant="60" id="nah-0R-HwP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <state key="normal" title="Start Spotting">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="switchSpotting:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bRu-Nh-FTq"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not running" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0lN-vA-mv1">
+                                <rect key="frame" x="16" y="549" width="568" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="giK-iu-Toc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="17"/>
+                                <color key="textColor" red="0.2039215714" green="0.28627452250000002" blue="0.36862745879999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beacon Details: Not Available" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wz2-76-9BZ">
+                                <rect key="frame" x="16" y="240" width="568" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="8P6-fe-w2V"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
+                                <color key="textColor" red="0.2039215714" green="0.28627452250000002" blue="0.36862745879999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wz2-76-9BZ" firstAttribute="leading" secondItem="f42-ax-rtP" secondAttribute="leadingMargin" id="4aV-FZ-msZ"/>
+                            <constraint firstItem="wz2-76-9BZ" firstAttribute="top" secondItem="0lN-vA-mv1" secondAttribute="bottom" constant="-330" id="928-uR-oZc"/>
+                            <constraint firstItem="igf-gB-a8Y" firstAttribute="centerX" secondItem="mRV-65-7Px" secondAttribute="centerX" id="Cxx-Nh-rLU"/>
+                            <constraint firstItem="mRV-65-7Px" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="EBW-0s-bpO"/>
+                            <constraint firstItem="0lN-vA-mv1" firstAttribute="top" secondItem="wVC-JS-2jz" secondAttribute="bottom" constant="8" symbolic="YES" id="H5K-lP-m62"/>
+                            <constraint firstAttribute="centerY" secondItem="wz2-76-9BZ" secondAttribute="centerY" id="JNW-Dm-ghD"/>
+                            <constraint firstItem="0lN-vA-mv1" firstAttribute="trailing" secondItem="f42-ax-rtP" secondAttribute="trailingMargin" id="JuE-np-jE3"/>
+                            <constraint firstAttribute="centerX" secondItem="0lN-vA-mv1" secondAttribute="centerX" id="UhI-N2-eFQ"/>
+                            <constraint firstItem="0lN-vA-mv1" firstAttribute="leading" secondItem="f42-ax-rtP" secondAttribute="leadingMargin" id="VRU-e0-J3Y"/>
+                            <constraint firstAttribute="centerX" secondItem="wz2-76-9BZ" secondAttribute="centerX" id="eMf-R1-cuh"/>
+                            <constraint firstItem="igf-gB-a8Y" firstAttribute="top" secondItem="mRV-65-7Px" secondAttribute="bottom" constant="8" symbolic="YES" id="sVw-7r-1H7"/>
+                            <constraint firstAttribute="centerX" secondItem="mRV-65-7Px" secondAttribute="centerX" id="vgT-t6-p2l"/>
+                            <constraint firstAttribute="centerX" secondItem="wVC-JS-2jz" secondAttribute="centerX" id="wc1-a1-esH"/>
+                            <constraint firstItem="wz2-76-9BZ" firstAttribute="trailing" secondItem="f42-ax-rtP" secondAttribute="trailingMargin" id="yS2-hi-x40"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnSwitchSpotting" destination="wVC-JS-2jz" id="dZN-R5-RkH"/>
+                        <outlet property="lblBeaconDetails" destination="wz2-76-9BZ" id="tyi-O1-M7B"/>
+                        <outlet property="lblBeaconReport" destination="0lN-vA-mv1" id="vVR-H3-BKj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
